@@ -16,7 +16,7 @@ const Head = () => {
         <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-20">
           <motion.video
             id="about-image"
-            src={DM}
+            src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/Dm.mp4"
             autoPlay
             loop
             muted

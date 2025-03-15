@@ -1,9 +1,7 @@
-import highlightFirstmv from "/assets/videos/tower1.mp4";
-import highlightSectmv from "/assets/videos/mes.mp4";
-import highlightThirdmv from "/assets/videos/video3.mp4";
-import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
-import exploremv from "/assets/videos/video3.mp4";
-import framemv from "/assets/videos/frame.mp4";
+
+
+
+
 
 import right from "/assets/images/right.svg";
 import replay from "/assets/images/replay.svg";
@@ -16,12 +14,12 @@ import rust1 from "../assets/rust.png";
 import { Heart, ShoppingCart, Truck, Settings, BarChart2, Lock } from "lucide-react";
 
 
-export const highlightFirstVideo = highlightFirstmv;
-export const highlightSecondVideo = highlightSectmv;
-export const highlightThirdVideo = highlightThirdmv;
-export const highlightFourthVideo = highlightFourthmv;
-export const exploreVideo = exploremv;
-export const frameVideo = framemv;
+export const highlightFirstVideo ="https://intelliod.s3.ap-south-1.amazonaws.com/videos/tower1.mp4";
+export const highlightSecondVideo = "https://intelliod.s3.ap-south-1.amazonaws.com/videos/mes.mp4";
+export const highlightThirdVideo =  "https://intelliod.s3.ap-south-1.amazonaws.com/videos/video3.mp4";;
+
+export const exploreVideo = "https://intelliod.s3.ap-south-1.amazonaws.com/videos/video3.mp4";
+
 
 export const rightImg = right;
 export const replayImg = replay;

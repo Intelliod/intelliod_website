@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import video1 from '../../assets/int.mp4';
-import video2 from '../../assets/image_1.png';
-import video3 from '../../assets/dams.mp4';
+
+
+
 import video4 from '../../assets/railway.mp4';
 import Popup from './Popup';
 
@@ -239,7 +239,7 @@ function Projects() {
 
       {/* Project 1 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
-        <video src={video1} autoPlay muted loop className='md:w-[500px] rounded-md' />
+        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/int.mp4" autoPlay muted loop className='md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='mb-2 text-xl sm:text-3xl lg:text-4xl'>Tower Reconstruction</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We undertook the monumental task of reconstructing 10,000 towers, leveraging our 3D reconstruction and digital twin technologies to ensure structural integrity and compliance with modern standards. This project not only enhanced our portfolio but also established our credibility in the industry, landing us numerous contracts in city planning.</p>
@@ -248,7 +248,7 @@ function Projects() {
           </p>
         </div>
       </div>
-      <Popup isOpen={isOpen.project1} onClose={() => togglePopup('project1')} videoSrc={video1} title="Project Overview: Tower Reconstruction" content={projectContent.project1} />
+      <Popup isOpen={isOpen.project1} onClose={() => togglePopup('project1')} videoSrc="https://intelliod.s3.ap-south-1.amazonaws.com/videos/int.mp4" title="Project Overview: Tower Reconstruction" content={projectContent.project1} />
 
       {/* Project 2 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
@@ -259,13 +259,13 @@ function Projects() {
             <span className='border-b border-transparent hover:border-white cursor-pointer bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'>Learn More..</span>
           </p>
         </div>
-        <img src={video2} className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
+        <img src="https://intelliod.s3.ap-south-1.amazonaws.com/images/image_1.png" className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
       </div>
-      <Popup isOpen={isOpen.project2} onClose={() => togglePopup('project2')} videoSrc={video2} title="Project Overview: City Planning" content={projectContent.project2} />
+      <Popup isOpen={isOpen.project2} onClose={() => togglePopup('project2')} videoSrc="https://intelliod.s3.ap-south-1.amazonaws.com/images/image_1.png" title="Project Overview: City Planning" content={projectContent.project2} />
 
       {/* Project 3 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
-        <video src={video3} autoPlay muted loop className='w-full md:w-[500px] rounded-md' />
+        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/dams.mp4" autoPlay muted loop className='w-full md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>Critical Inspections</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We have performed comprehensive inspections of critical dam infrastructure using our digital twin technology. Our solutions enable real-time monitoring of structural health, ensuring safety and compliance with regulatory standards.</p>
@@ -274,7 +274,7 @@ function Projects() {
           </p>
         </div>
       </div>
-      <Popup isOpen={isOpen.project3} onClose={() => togglePopup('project3')} videoSrc={video3} title="Project Overview: Critical Inspections" content={projectContent.project3} />
+      <Popup isOpen={isOpen.project3} onClose={() => togglePopup('project3')} videoSrc="https://intelliod.s3.ap-south-1.amazonaws.com/videos/dams.mp4" title="Project Overview: Critical Inspections" content={projectContent.project3} />
 
       {/* Project 4 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
@@ -285,9 +285,9 @@ function Projects() {
             <span className='border-b border-transparent hover:border-white cursor-pointer bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'>Learn More..</span>
           </p>
         </div>
-        <video src={video4} autoPlay muted loop className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
+        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/railway.mp4" autoPlay muted loop className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
       </div>
-      <Popup isOpen={isOpen.project4} onClose={() => togglePopup('project4')} videoSrc={video4} title="Project Overview: Railway Bridge Inspections" content={projectContent.project4} />
+      <Popup isOpen={isOpen.project4} onClose={() => togglePopup('project4')} videoSrc="https://intelliod.s3.ap-south-1.amazonaws.com/videos/railway.mp4" title="Project Overview: Railway Bridge Inspections" content={projectContent.project4} />
     </div>
   );
 }

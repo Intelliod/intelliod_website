@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import aboutimg from '../../assets/cv3.jpg';
+
 
 const About = () => {
   return (
@@ -36,7 +36,7 @@ const About = () => {
             </motion.ul>
           </motion.div>
           <motion.img
-            src={aboutimg}
+            src="https://intelliod.s3.ap-south-1.amazonaws.com/images/cv3.jpg"
             className="md:w-[90%] rounded order-0 lg:order-1"
             alt="About Image"
             initial={{ scale: 1.5, opacity: 0, x: window.innerWidth < 768 ? 0 : 150 }}

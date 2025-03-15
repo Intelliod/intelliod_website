@@ -274,10 +274,7 @@ export const checklistItems = [
 
 
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
+
   benefitImage2,
   chromecast,
   disc02,
@@ -522,7 +519,7 @@ export const benefits = [
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+
     imageUrl: benefitImage2,
   },
   {
@@ -530,7 +527,7 @@ export const benefits = [
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+
     imageUrl: benefitImage2,
     light: true,
   },
@@ -539,7 +536,7 @@ export const benefits = [
     title: "Connect everywhere",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+  
     imageUrl: benefitImage2,
   },
 ]

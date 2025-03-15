@@ -31,7 +31,7 @@ const Hero = () => {
 <section className="w-full nav-height relative bg-black">
   <video
     className="absolute top-0 left-0 w-full h-full object-cover"
-    src="/assets/videos/bg.mp4"  // Update path if necessary
+    src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/bg.mp4"  // Update path if necessary
     autoPlay
     loop
     muted

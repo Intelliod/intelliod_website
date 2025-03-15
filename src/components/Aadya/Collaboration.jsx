@@ -41,7 +41,7 @@ const Collaboration = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                 <video
-                  src={brainwaveSymbol}
+                  src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/brainz.mp4"
                   className="w-full h-full object-cover rounded-full" // Make the video fill the container
                   controls // Optional: Add controls to allow play/pause
                   autoPlay // Optional: Play the video automatically

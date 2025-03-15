@@ -12,7 +12,7 @@ import image5 from '../../assets/CV_AM.jpg';
 
 export const feature = [
   {
-    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/fod/FOD.png",
+    imageSrc: "https://intelliod.s3.ap-south-1.amazonaws.com/images/FOD.png",
     text: "Smart FOD Detection",
     title: "Intelligence FOD Tracker",
     description: (
