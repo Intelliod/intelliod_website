@@ -37,7 +37,7 @@ const HeroSection = () => {
       <h1 className="text-4xl text-white opacity-1 sm:text-6xl lg:text-8xl tracking-wide mt-2">
         for Industry and Society
       </h1>
-      <p className="mt-10 text-xl text-neutral-400 max-w-4xl">
+      <p className="mt-10 text-xl px-2 text-neutral-400 max-w-4xl">
       Our intelligent solutions bridge today's challenges with tomorrow's possibilities
       </p>
       <div className="flex justify-center my-10">

@@ -8,7 +8,7 @@ const Benefits = () => {
   return (
     <Section id="features">
       <div className="flex justify-center items-center relative z-2">
-        <h2 className="h2 mb-4 md:mb-8 text-white text-center md:max-w-md lg:max-w-2xl">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl mb-4 md:mb-8 text-white text-center font-semibold md:max-w-md lg:max-w-2xl">
           Chat Smarter,{" "}
           <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
             Not Harder with Adhya

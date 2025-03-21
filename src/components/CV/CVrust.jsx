@@ -20,7 +20,7 @@ const Rust = () => {
           <div className="flex flex-col justify-center items-start order-2 lg:order-2">
             <motion.h1
               id="about-content"
-              className="text-2xl md:text-4xl text-white leading-relaxed"
+              className="text-xl md:text-2xl lg:text-4xl text-center text-white leading-relaxed"
               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
               transition={{ duration: 0.9, ease: 'easeOut' }}
@@ -29,7 +29,7 @@ const Rust = () => {
             </motion.h1>
             <motion.p
               id="about-content"
-              className="text-md text-gray-200 leading-relaxed mt-5"
+              className="text-sm md:text-md lg:text-lg text-gray-200 leading-relaxed mt-5"
               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
               transition={{ duration: 0.9, ease: 'easeOut' }}

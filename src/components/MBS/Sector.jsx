@@ -220,10 +220,10 @@ function Sectors() {
   }, [isDragging, startX, scrollLeft]);
 
   return (
-    <div className="py-4 px-10 ">
-      <div className='px-20 text-center bg-clip-text mb-12'>
-        <h1 className="text-6xl font-semibold mb-3">Technologies Transforming</h1>
-        <span className="text-6xl bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text font-semibold">
+    <div className="py-4 md:px-10 ">
+      <div className='lg:px-20 text-left bg-clip-text mb-12'>
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold mb-3">Technologies Transforming</h1>
+        <span className="text-3xl md:text-4xl lg:text-6xl bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text font-semibold">
         Industry Sectors
         </span>
       </div>
@@ -231,7 +231,7 @@ function Sectors() {
         ref={containerRef}
         className="w-full overflow-x-auto scrollbar-hide cursor-grab"
       >
-        <div className="flex space-x-16 w-max px-24">
+        <div className="flex space-x-8 md:space-x-16 w-max px-4 md:px-24">
           {sectors.map((sector, index) => (
             <Sector_Card
               key={index}

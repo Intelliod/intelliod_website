@@ -76,14 +76,14 @@ function Workflow() {
   return (
 
     <div className='items-center'>
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-center mt-6 tracking-wide">
         Intelligence done{" "}
         <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
           RIGHT
         </span>
       </h2>
-      <div ref={sectionRefs[0]} className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-20 mt-8 border-b border-neutral-700 space-y-10 lg:space-y-0 items-center'>
-        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/video3.mp4" autoPlay muted loop className='w-[70%] lg:w-[40%] rounded-md' />
+      <div ref={sectionRefs[0]} className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-20 border-b border-neutral-700 space-y-10 lg:space-y-0 items-center'>
+        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/video3.mp4" autoPlay muted loop className='w-[90%] lg:w-[40%] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='mb-2 text-2xl md:text-4xl font-semibold text-blue-600 '>
             Asset <span className='bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'>{displayTexts[0] || originalTexts[0]}</span>
@@ -103,11 +103,11 @@ function Workflow() {
         Document Intelligence automates data extraction and analysis, enhancing accuracy and efficiency. AI-powered insights streamline decision-making and compliance.
         </p>
       </div>
-      <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/video1.mp4"autoPlay muted loop className='w-[70%] lg:w-[40%] order-0 lg:order-1 rounded-md' />
+      <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/video1.mp4"autoPlay muted loop className='w-[90%] lg:w-[40%] order-0 lg:order-1 rounded-md' />
     </div>
 
       <div ref={sectionRefs[2]} className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-20 border-b border-neutral-700 space-y-10 lg:space-y-0 items-center'>
-        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/int.mp4" autoPlay muted loop className='w-[70%] lg:w-[40%] rounded-md' />
+        <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/int.mp4" autoPlay muted loop className='w-[90%] lg:w-[40%] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='mt-1 mb-2 text-2xl md:text-4xl font-semibold text-blue-600 '>
             Neural <span className='bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'>{displayTexts[2] || originalTexts[2]}</span>

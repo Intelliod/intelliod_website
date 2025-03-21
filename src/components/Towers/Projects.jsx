@@ -57,11 +57,11 @@ function Projects() {
       <>
         <section className="mb-6 max-h-[580px] overflow-y-scroll scrollbar-hide">
         <div className=" max-w-3xl">
-                <h1 className=" text-xl md:text-2xl lg:text-3xl font-semibold mb-4">Project Overview: 10,000 Tower Reconstruction</h1>
+                <h1 className=" text-xl md:text-2xl lg:text-3xl text-center font-semibold mb-4">Project Overview: 10,000 Tower Reconstruction</h1>
 
                 <section className="mb-6">
                   <h2 className="text-lg md:text-xl lg:text-2xl mb-2">Introduction</h2>
-                  <p>
+                  <p className='text-sm md:text-md'>
                     We undertook the monumental task of reconstructing 10,000 towers, leveraging cutting-edge 3D reconstruction 
                     and digital twin technologies. This initiative was designed to ensure structural integrity and compliance 
                     with modern standards.
@@ -70,7 +70,7 @@ function Projects() {
 
                 <section className="mb-6">
                   <h2 className="text-lg md:text-xl lg:text-2xl mb-2">Project Highlights</h2>
-                  <ul className="list-disc pl-6">
+                  <ul className="list-disc pl-6 text-sm md:text-md">
                     <li><strong>Scope</strong>: Reconstruction of 10,000 towers</li>
                     <li><strong>Technologies Used</strong>: 3D Reconstruction, Digital Twin Technologies</li>
                     <li><strong>Duration</strong>: Completed in just 3 months</li>
@@ -79,7 +79,7 @@ function Projects() {
 
                 <section className="mb-6">
                   <h2 className="text-lg md:text-xl lg:text-2xl mb-2">Impact</h2>
-                  <p>
+                  <p className='text-sm md:text-md'>
                     This ambitious project not only enhanced our portfolio but also established our credibility in the 
                     industry, leading to numerous contracts in city planning.
                   </p>
@@ -87,7 +87,7 @@ function Projects() {
 
                 <section className="mb-6">
                   <h2 className="text-lg md:text-xl lg:text-2xl mb-2">Why Choose Us?</h2>
-                  <ul className="list-disc pl-6 md:text-md ">
+                  <ul className="list-disc pl-6 text-sm md:text-md ">
                     <li><strong>Expertise</strong>: Our skilled team ensures the highest standards in reconstruction.</li>
                     <li><strong>Innovation</strong>: We utilize the latest technologies to provide reliable solutions.</li>
                     <li><strong>Commitment</strong>: We are dedicated to delivering projects on time and within budget.</li>
@@ -102,17 +102,17 @@ function Projects() {
     project2: (
       <>
         <section className="mb-6 max-h-[580px] overflow-y-scroll scrollbar-hide">
-        <div className="p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Innovative Urban Planning Solutions</h1>
-      <p className="text-lg text-center mb-8">
+        <div className="">
+      <h1 className=" text-xl md:text-2xl lg:text-3xl font-bold text-center mb-2 md:mb-6">Innovative Urban Planning Solutions</h1>
+      <p className="text-sm md:text-lg text-left mb-5 md:mb-8">
         We specialize in sustainable city designs, leveraging digital twins of urban environments to help municipalities make informed decisions.
       </p>
 
-      <div className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
-        <ul className="space-y-4">
+      <div className="mb-4 md:mb-10">
+        <h2 className=" text-lg md:text-xl lg:text-2xl font-semibold">Key Features</h2>
+        <ul className="space-y-1 md:space-y-3 text-sm md:text-md">
           {features.map((feature) => (
-            <li key={feature.title} className="p-4 hover:shadow-lg rounded-md transition">
+            <li key={feature.title} className=" py-1 hover:shadow-lg rounded-md transition">
               <h3 className="font-bold">{feature.title}</h3>
               <p>{feature.description}</p>
             </li>
@@ -121,10 +121,10 @@ function Projects() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-semibold mb-4">Use Cases</h2>
-        <ul className="space-y-4">
+        <h2 className=" text-lg md:text-2xl lg:text-3xl font-semibold mb-2">Use Cases</h2>
+        <ul className="space-y-1 md:space-y-3 text-sm md:text-md">
           {useCases.map((useCase) => (
-            <li key={useCase.title} className="p-4  hover:shadow-lg rounded-md transition">
+            <li key={useCase.title} className="py-1  hover:shadow-lg rounded-md transition">
               <h3 className="font-bold">{useCase.title}</h3>
               <p>{useCase.example}</p>
             </li>
@@ -139,22 +139,22 @@ function Projects() {
     project3: (
       <>
         <section className="mb-6 max-h-[700px] overflow-y-scroll scrollbar-hide ">
-        <div className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto  rounded-lg p-6">
+        <div className="min-h-screen">
+      <div className="max-w-4xl mx-auto rounded-lg ">
         {/* Introduction Section */}
         <section className="mb-8">
-          <h1 className="text-3xl font-bold  mb-4">
+          <h1 className="text-lg md:text-xl lg:text-3xl font-bold  mb-4">
             Project Overview: Digital Twin City Infrastructure
           </h1>
-          <p className="text-lg ">
+          <p className="text-sm md:text-lg ">
             We pioneered an innovative approach to urban planning through comprehensive digital twin technology, creating exact virtual replicas of entire cities. Using advanced drone photogrammetry, our team captured and processed detailed imagery to create accurate digital representations of urban infrastructure, revolutionizing how cities plan, monitor, and improve their development.
           </p>
         </section>
 
         {/* Project Highlights Section */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold  mb-4">Project Highlights</h2>
-          <ul className="list-disc pl-6 space-y-2 ">
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">Project Highlights</h2>
+          <ul className="list-disc pl-6 space-y-2 text-sm md:text-md">
             <li><strong>Scope:</strong> Complete digital replication of urban infrastructure including buildings, roads, utilities, and public spaces</li>
             <li><strong>Technologies Used:</strong> Drone photogrammetry and digital twin modeling</li>
             <li><strong>Duration:</strong> Completed in just one month, showcasing our efficient workflow and expertise</li>
@@ -163,16 +163,16 @@ function Projects() {
 
         {/* Impact Section */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold  mb-4">Impact</h2>
-          <p className="text-lg ">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold  mb-4">Impact</h2>
+          <p className="text-sm md:text-md">
             Our rapid deployment and processing capabilities have transformed city planning processes by providing unprecedented visibility into urban infrastructure. The system has been successfully implemented in multiple municipalities, helping city planners make informed decisions and optimize resource allocation. The speed and accuracy of our drone-based approach have set new standards in the industry.
           </p>
         </section>
 
         {/* Why Choose Us Section */}
         <section>
-          <h2 className="text-2xl font-semibold  mb-4">Why Choose Us?</h2>
-          <ul className="list-disc pl-6 space-y-2 ">
+          <h2 className="text-xl md:text-2xl font-semibold  mb-4">Why Choose Us?</h2>
+          <ul className="list-disc pl-6 space-y-2 text-xs md:text-md">
             <li><strong>Expertise:</strong> Our team brings specialized knowledge in drone photogrammetry and urban planning</li>
             <li><strong>Innovation:</strong> We deliver efficient solutions through advanced drone technology and processing</li>
             <li><strong>Commitment:</strong> We ensure rapid project completion without compromising on quality</li>
@@ -187,22 +187,22 @@ function Projects() {
     project4: (
       <>
         <section className="mb-6 max-h-[700px] overflow-y-scroll scrollbar-hide">
-        <div className="min-h-screen  py-10">
-      <div className="max-w-4xl mx-auto px-6 shadow-md rounded-lg p-8">
-        <h1 className="text-3xl font-bold text-center mb-6 ">
+        <div className="min-h-screen  md:py-10">
+      <div className="max-w-4xl mx-auto md:px-6 shadow-md rounded-lg md:p-8">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6 ">
           Railway Bridge Digital Twin Inspection - Kerala
         </h1>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold ">Introduction</h2>
-          <p className=" mt-4">
+        <section className="mb-4 md:mb-8">
+          <h2 className="text-lg md:text-xl font-semibold ">Introduction</h2>
+          <p className="mt-2 md:mt-4 text-sm md:text-md">
             We conducted a comprehensive digital inspection of railway bridges across Kerala using advanced drone photogrammetry. This pioneering initiative captured detailed structural data of critical bridge infrastructure, ensuring safety and compliance with Indian Railways standards while adapting to the unique coastal and monsoon conditions of Kerala.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold ">Project Highlights</h2>
-          <ul className="list-disc list-inside mt-4 ">
+        <section className=" mb-4 md:mb-8">
+          <h2 className="text-lg md:text-xl font-semibold ">Project Highlights</h2>
+          <ul className="list-disc list-inside mt-2 md:mt-4 text-sm md:text-md">
             <li><strong>Scope:</strong> Digital inspection of major railway bridges across Kerala's network</li>
             <li><strong>Technologies Used:</strong> Drone photogrammetry and digital twin modeling</li>
             <li><strong>Duration:</strong> Completed in just one month, demonstrating efficient project execution</li>
@@ -210,16 +210,16 @@ function Projects() {
           </ul>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold ">Impact</h2>
-          <p className=" mt-4">
+        <section className="mb-4 md:mb-8">
+          <h2 className="text-lg md:text-xl font-semibold ">Impact</h2>
+          <p className="text-sm md:text-md mt-2 md:mt-4">
             Our bridge inspection project has revolutionized maintenance planning for Kerala Railways by providing detailed insights into structural conditions. The digital documentation has been crucial for identifying maintenance priorities, especially considering Kerala's challenging climate and coastal environment. This has led to more efficient resource allocation and improved safety measures.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold ">Why Choose Us?</h2>
-          <ul className="list-disc list-inside mt-4 ">
+          <h2 className="text-lg md:text-xl font-semibold ">Why Choose Us?</h2>
+          <ul className="list-disc list-inside mt-2 md:mt-4 text-sm md:text-md">
             <li><strong>Expertise:</strong> Our team combines knowledge of local conditions with bridge inspection expertise</li>
             <li><strong>Innovation:</strong> We provide safe, non-intrusive inspection methods using drone technology</li>
             <li><strong>Commitment:</strong> We deliver comprehensive reports while adhering to strict railway safety protocols</li>
@@ -235,7 +235,7 @@ function Projects() {
 
   return (
     <div className='items-center'>
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-10">Our <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">PROJECTS</span></h2>
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide mb-10 font-medium">Our <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">PROJECTS</span></h2>
 
       {/* Project 1 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>

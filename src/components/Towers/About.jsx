@@ -1,67 +1,3 @@
-// import { motion } from 'framer-motion';
-// import rust1Img from '../../assets/aboutbg(1).png';
-// import React, { useState } from 'react';
-
-// const Rust = () => {
-//   const [open,setOpen] = useState(false);
-
-//   const TogglePopup = () =>{
-//     setOpen(!open);
-//   }
-//   return (
-//     <section className="w-full relative">
-//       <div className="h-5/6 w-[80%] mx-auto flex flex-col">
-//         <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-20">
-//           <motion.img
-//             id="about-image"
-//             src={rust1Img}
-//             className="w-[40%] lg:w-[55%] rounded order-1 lg:order-1 ml-40"
-//             alt="About Image"
-//             initial={{ scale: 1.5, opacity: 0, x: 150 }} // Initial state (zoomed in and off to the right)
-//             whileInView={{ scale: 1, opacity: 1, x: 0 }} // Final state (zoomed out and centered)
-//             transition={{ duration: 2, ease: 'easeOut' }}
-//           />
-//           {/* Content on the right */}
-//           <div className="flex flex-col justify-center items-start order-2 lg:order-2">
-//             <motion.h1
-//               id="about-content"
-//               className="text-2xl md:text-4xl text-white leading-relaxed"
-//               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
-//               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
-//               transition={{ duration: 0.9, ease: 'easeOut' }}
-//             >
-//               <h1 className='text-xl md:text-3xl lg:text-5xl font-semibold'>What is a <span className='bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'> Digital Twin</span></h1>
-//             </motion.h1>
-//             <motion.p
-//               id="about-content"
-//               className="text-md text-gray-200 leading-relaxed mt-5"
-//               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
-//               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
-//               transition={{ duration: 0.9, ease: 'easeOut' }}
-//             >
-//               Digital Twins are cutting-edge virtual replicas of physical objects, systems, or processes that enable real-time monitoring and analysis. By integrating data from sensors and IoT devices, Digital Twins provide a dynamic simulation that reflects the current state and performance of their physical counterparts. This innovative technology allows organizations to optimize operations, predict maintenance needs, and make informed decisions by visualizing complex systems. From enhancing manufacturing efficiency to personalizing healthcare solutions, Digital Twins are transforming industries by driving continuous improvement and fostering collaboration across teams.
-//             </motion.p>
-//             <motion.p className='mt-5 text-xl border px-2 py-1 rounded-lg hover:border-white cursor-pointer bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text' onClick={TogglePopup()} >
-//               Have a Glimpse
-//             </motion.p>
-//           </div>
-//         </div>
-//       </div>
-//       { 
-//       open && (
-//       <div className='fixed insert-0 z-40 flex justify-center items-center bg-black'>
-//         <h1>jhvfsdkjfhgb vskjdfhvsgkj</h1>
-        
-//       </div>
-//       )
-//       }
-//     </section>
-//   );
-// };
-
-// export default Rust;
-
-
 import { motion } from 'framer-motion';
 import rust1Img from '../../assets/aboutbg_1_-removebg-preview.png';
 import React, { useState, useRef, useEffect } from 'react';
@@ -136,7 +72,7 @@ const Rust = () => {
           <motion.img
             id="about-image"
             src={rust1Img}
-            className="w-[40%] lg:w-[55%] rounded order-1 lg:order-1 ml-40"
+            className="w-[40%] lg:w-[55%] rounded order-1 lg:order-1 ml-20 md:ml-40"
             alt="About Image"
             initial={{ scale: 1.5, opacity: 0, x: 150 }}
             whileInView={{ scale: 1, opacity: 1, x: 0 }}

@@ -1,136 +1,6 @@
-// import { Menu, X } from "lucide-react";
-// import { useState, useEffect, useRef } from "react";
-// import logo from "../assets/erasebg-transformed.png";
-// import { navItems } from "../constants";
-// import { RiArrowDropDownLine } from "react-icons/ri";
-
-// function Dropdown({ items, onClose }) {
-//   const maxWidth = Math.max(...items.map(item => item.label.length)) * 8; 
-//   return (
-//     <ul style={{ width: `${maxWidth}px` }} className='absolute bg-white rounded-md shadow-lg mt-1'>
-//       {items.map((item, index) => (
-//         <li key={index} className='p-2 hover:bg-gray-200 hover:rounded-md'>
-//           <a href={item.href} className='font-semibold text-gray-600 text-xs' onClick={onClose}>
-//             {item.label}
-//           </a>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// }
-
-
-// const Navbar = () => {
-//   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-//   const [dropdown, setDropdown] = useState(null);
-//   const dropdownRef = useRef(null);
-
-//   const toggleNavbar = () => {
-//     setMobileDrawerOpen(!mobileDrawerOpen);
-//   };
-
-//   const toggleDropdown = (index) => {
-//     setDropdown(dropdown === index ? null : index);
-//   };
-
-//   const handleClickOutside = (event) => {
-//     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-//       setDropdown(null);
-//     }
-//   };
-
-//   useEffect(() => {
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => {
-//       document.removeEventListener("mousedown", handleClickOutside);
-//     };
-//   }, []);
-
-//   return (
-//     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
-//       <div className="container px-4 mx-auto relative lg:text-sm">
-//         <div className="flex justify-between items-center">
-//           <div className="flex items-center flex-shrink-0">
-            
-//           <a href="/" className="flex items-center" onClick={() => window.location.reload()}>
-//             <img className="w-16 rounded-[100%]" src={logo} alt="Logo" />
-//             <h1 className="text-3xl py-3 font-bold text-white">INTELLIOD</h1>
-//           </a>
-//           </div>
-//          <ul className="hidden lg:flex ml-14 space-x-12">
-//             {navItems.map((item, index) => (
-//               <li key={index} className="relative">
-//                 <button
-//                   onClick={() => toggleDropdown(index)}
-//                   className="hover:text-[#007fff] focus:outline-none flex text-lg items-center"
-//                   aria-expanded={dropdown === index}
-//                 >
-//                   <span className="flex items-center">
-//                   <a
-//                    href={item.href}
-//                    className="hover:text-[#007fff]"
-//                  >
-//                    {item.label}
-//                  </a>
-//                     {item.label === 'Products' && <RiArrowDropDownLine className='w-6 h-6 ml-1' />}
-//                   </span>
-//                 </button>
-//                 {dropdown === index && item.dropdownItems && item.dropdownItems.length > 0 && (
-//                   <div ref={dropdownRef}>
-//                     <Dropdown items={item.dropdownItems} onClose={() => setDropdown(null)} />
-//                   </div>
-//                 )}
-//               </li>
-//             ))}
-//           </ul>
-//           <div className="lg:hidden md:flex flex-col justify-end">
-//             <button onClick={toggleNavbar}>
-//               {mobileDrawerOpen ? <X /> : <Menu />}
-//             </button>
-//           </div>
-//         </div>
-//         {mobileDrawerOpen && (
-//           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-//             <ul>
-//               {navItems.map((item, index) => (
-//                 <li key={index} className="relative">
-//                 <button
-//                   onClick={() => toggleDropdown(index)}
-//                   className="hover:text-[#007fff] focus:outline-none flex items-center"
-//                   aria-expanded={dropdown === index}
-//                 >
-//                   <span className="flex items-center">
-//                   <a
-//                    href={item.href}
-//                    className="hover:text-[#007fff]"
-//                  >
-//                    {item.label}
-//                  </a>
-//                     {item.label === 'Products' && <RiArrowDropDownLine className='w-6 h-6 ml-1' />}
-//                   </span>
-//                 </button>
-//                 {dropdown === index && item.dropdownItems && item.dropdownItems.length > 0 && (
-//                   <div ref={dropdownRef}>
-//                     <Dropdown items={item.dropdownItems} onClose={() => setDropdown(null)} />
-//                   </div>
-//                 )}
-//               </li>
-//               ))}
-//             </ul>
-//           </div>
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import logo from "../assets/erasebg-transformed.png";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -145,13 +15,6 @@ const Navbar = () => {
   };
 
   const navItems = [
-    // { label: "SOLUTIONS", href: "#solutions",dropdownItems: [
-    //   { label: 'Smart City Planing', href: '/Product1' },
-    //   { label: 'Telecom Tower Reconstruction', href: '/Product2' },
-    //   { label: 'Neural Farms', href: '/Product3' },
-    //   { label: 'Intelligence Fod Tracker', href: '/Product4' },
-    //   { label: 'AADHYA', href: '/Product5' },
-    // ] },
     { label: "TECHNOLOGIES", href: "#technologies",dropdownItems: [
       { label: 'Digital Twin', href: '/towers_page' },
       { label: 'Computer Vision', href: '/cv_page' },
@@ -171,8 +34,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b backdrop-blur-xl border-neutral-200 px-2 pt-4">
-      <div className=" px-5 lg:px-10 mx-auto lg:text-sm ">
+    <nav className="sticky top-0 z-50 border-b backdrop-blur-xl border-neutral-200 px-2 md:pt-4">
+      <div className=" lg:px-10 mx-auto lg:text-sm ">
         <div className="flex justify-between items-center ">
           <div className="flex flex-shrink-0 py-3 rounded-xl ml-0 sm:ml-0 lg:ml-10 ">
             <a href="/" className="flex items-center" onClick={() => window.location.reload()}>

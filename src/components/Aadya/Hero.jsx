@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="pt-[20rem] -mt-[5.25rem]" // Adjusted top padding for heading
+      className="pt-[10rem] lg:pt-[20rem] -mt-[5.25rem]" // Adjusted top padding for heading
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -50,15 +50,13 @@ const Hero = () => {
       <div ref={vantaRef} className="absolute inset-0 z-0"></div>
 
       <div className="container relative z-10" ref={parallaxRef}>
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[10rem]">
-        <h1 className="h1 mb-6">
+        <div className="relative z-1 md:w-[62rem] mx-auto text-center mb-[10rem]">
+        <h1 className="font-semibold mb-6 text-2xl md:text-4xl lg:text-6xl">
   
-  <span className="bg-gradient-to-r from-pink-700 via-orange-600 to-orange-200 text-transparent text-bold bg-clip-text">
-   Transforming Language
-  </span>
-  <span className="text-white text-bold"> Intelligence &nbsp;</span>
-
-
+        <span className="bg-gradient-to-r from-pink-700 via-orange-600 to-orange-200 text-transparent text-bold bg-clip-text">
+        Transforming Language
+        </span>
+        <span className="text-white text-bold"> Intelligence &nbsp;</span>
             <span className="inline-block relative">
               <img
                 src={curve}
@@ -80,7 +78,7 @@ const Hero = () => {
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot} // Using the user_page1 image
-                  className="w-full h-full object-cover" // Full width and height, cover the background
+                  className="w-full h-full md:object-cover" // Full width and height, cover the background
                   width={1024}
                   height={490}
                   alt="AI"

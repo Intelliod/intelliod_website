@@ -16,25 +16,25 @@ const CV_dashboard = () => {
         <div id="home">
           <CV />
         </div>
-        <div id="about" className="py-10">
+        <div id="about" className="md:py-10">
           <Head />
         </div>
-        <div  className="py-10">
+        <div  className="md:py-10">
           <About />
         </div>
-        <div id="rust" className="py-10">
+        <div id="rust" className="md:py-10">
           <Rust />
         </div>
-        <div className="max-w-7xl mx-auto pt-10 px-6">
-        <div id="feature" className="py-20">
+        <div className="max-w-7xl mx-auto md:pt-10 md:px-6">
+        <div id="feature" className="md:py-20">
           <Feature />
         </div>
-        <div id="features" className="py-20">
+        <div id="features" className="md:py-20">
           <Features />
         </div>
-     
-        <Footer />
         </div>
+        <Footer />
+       
         </div>
       </>
     );

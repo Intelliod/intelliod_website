@@ -28,7 +28,7 @@ const Head = () => {
           <div>
             <motion.h1
               id="about-content"
-              className="text-2xl md:text-4xl text-white font-bold leading-relaxed text-center lg:text-left"
+              className="text-xl md:text-4xl text-white font-bold leading-relaxed text-center lg:text-left"
               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
               transition={{ duration: 0.9, ease: 'easeOut' }}
@@ -37,7 +37,7 @@ const Head = () => {
             </motion.h1>
             <motion.p
               id="about-content"
-              className="text-md text-gray-200 leading-relaxed mt-5 lg:text-left"
+              className="text-sm md:text-md lg:text-lg text-gray-200 leading-relaxed mt-5 lg:text-left"
               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
               transition={{ duration: 0.9, ease: 'easeOut' }}
@@ -46,7 +46,7 @@ const Head = () => {
             </motion.p>
             <motion.ul
               id="about-content"
-              className="list-disc list-inside text-gray-200 mt-4 text-md md:text-lg"
+              className="list-disc list-inside text-gray-200 mt-4 text-sm md:text-md lg:text-lg"
               initial={{ x: -100, opacity: 0 }} // Initial state (off-screen to the left)
               whileInView={{ x: 0, opacity: 1 }} // Final state (slide in from left)
               transition={{ duration: 0.9, ease: 'easeOut' }}

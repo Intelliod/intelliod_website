@@ -21,7 +21,7 @@ const Features = () => {
     animateWithGsap('.g_text', { y: 0, opacity: 1, ease: 'power2.inOut', duration: 1 });
   }, []);
   return (
-    <section className="bg-zinc-800 relative overflow-hidden py-16 max-w-7xl mx-auto">
+    <section className="bg-zinc-800 relative overflow-hidden py-8 md:py-0 max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 ">
           <h1 id="features_title" className="text-4xl font-semibold bg-gradient-to-r from-pink-700 via-orange-500 to-orange-200 text-transparent bg-clip-text">Explore Our Vision</h1>
@@ -62,13 +62,13 @@ const Features = () => {
                </div>
              </div>
           {/* Text Section */}
-          <div className="w-full mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="g_text text-md text-gray-200 leading-relaxed">
+          <div className="w-full md:mt-8">
+            <div className="  grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <div className="text-sm md:text-md text-gray-200 leading-relaxed">
                 The primary goal of computer vision is to automate human supervision. The ability to capture and{' '}
                 <span className="text-white">digitize real-life scenes</span> provides new opportunities to detect threats better and earlier, quantify risk, and provide real-time security assessments.
               </div>
-              <div className="g_text text-md text-gray-200 leading-relaxed">
+              <div className="text-sm md:text-md text-gray-200 leading-relaxed">
                 Counting moving objects is one of the most popular use cases in{' '}
                 <span className="text-white">computer vision (CV)</span>. It is used, among other things, in traffic analysis and as part of the automation of manufacturing processes.
               </div>

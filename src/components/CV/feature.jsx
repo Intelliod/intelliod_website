@@ -1,7 +1,6 @@
 
 
 import React, { useState } from 'react';
-import {Truck, Menu, X } from 'lucide-react';
 import image1 from '../../assets/health_mba.png'; 
 import image4 from '../../assets/retail.jpg'; 
 import image6 from '../../assets/manufacture.png'; 
@@ -85,64 +84,55 @@ export const feature = [
 
 const Feature = () => {
     const [activeTab, setActiveTab] = useState('tab1');
-    const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const handleToggleNav = () => {
-        setIsNavOpen(prev => !prev);
-    };
 
     return (
-        <div className="font-sans max-w-7xl mx-auto p-5">
-            <header className="text-center mb-20">
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
-                    Our {" "}
-                    <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
-                        SOLUTIONS
-                    </span>
-                </h2>
-            </header>
+      <div className="font-sans max-w-7xl mx-auto md:mt-20 p-5">
+      <div className="text-center md:mb-10">
+          <h2 className="text-2xl font-semibold md:text-4xl mb-6 md:mb-8 text-white">
+              Our{" "}
+              <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
+                  Usecases
+              </span>
+          </h2>
+      </div>
 
-            <div className="flex justify-end lg:hidden mb-5">
-                <button 
-                    className="px-4 py-2 text-lg font-semibold border-none rounded-md bg-[#007fff] text-white"
-                    onClick={handleToggleNav}
-                >
-                    {isNavOpen ? <X /> : <Menu />}
-                </button>
-            </div>
+      <div className="flex overflow-x-auto justify-between cursor-pointer mb-5">
+          {feature.map((solution, index) => (
+              <button
+                  key={index}
+                  className={`text-sm md:text-md px-4 py-2 border-none rounded-md whitespace-nowrap ${
+                      activeTab === `tab${index + 1}` ? 'bg-[#007fff] text-white' : 'bg-gray-300'
+                  } mr-2`}
+                  onClick={() => setActiveTab(`tab${index + 1}`)}
+              >
+                  {solution.text}
+              </button>
+          ))}
+      </div>
 
-            <nav className={`flex justify-between ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
-                {feature.map(({ text }, index) => (
-                    <button
-                        key={index}
-                        className={`px-4 py-2 text-[1.2rem] border-none rounded-md ${activeTab === `tab${index + 1}` ? 'bg-[#007fff] text-white' : 'bg-gray-300'} mb-2 lg:mb-0 lg:mr-2`}
-                        onClick={() => {
-                            setActiveTab(`tab${index + 1}`);
-                            if (isNavOpen) handleToggleNav();
-                        }}
-                    >
-                        {text}
-                    </button>
-                ))}
-            </nav>
-            <div>
-                {feature.map(({ title, description, imageSrc }, index) => (
-                    <div key={index} className={`p-4 mt-2 border-t border-neutral-600 ${activeTab === `tab${index + 1}` ? 'block' : 'hidden'}`}>
-                        <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 space-y-10 lg:space-y-0 items-center'>
-                            <div className='flex justify-center flex-col'>
-                                <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>
-                                    {title}
-                                </h1>
-                                <div className="text-md md:text-lg mt-3 text-neutral-500">
-                                    {description}
-                                </div>
-                            </div>
-                            <img src={imageSrc} alt={name} className='w-full md:w-[600px] rounded-md' />
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
+      {feature.map((solution, index) => (
+          <div
+              key={index}
+              id={`tab${index + 1}`}
+              className={`p-4 mt-2 border-t border-neutral-600 ${
+                  activeTab === `tab${index + 1}` ? 'block' : 'hidden'
+              }`}
+          >
+              <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10 items-start">
+                  <div className="w-full flex justify-center flex-col md:pt-10">
+                      <h1 className="text-xl md:text-3xl lg:text-4xl text-blue-600 mb-2">
+                          {solution.title}
+                      </h1>
+                      <p className="text-sm md:text-md md:text-lg mt-3 text-gray-200">
+                          {solution.description}
+                      </p>
+                  </div>
+                  <img src={solution.imageSrc} alt={solution.title} className="w-full md:w-[450px] rounded-md" />
+              </div>
+          </div>
+      ))}
+  </div>
     );
 };
 

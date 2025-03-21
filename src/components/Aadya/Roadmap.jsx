@@ -10,12 +10,12 @@ import adminPage3 from "../../assets/admin_page3.png";
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
         <div className="text-center">
-          <h2 className="h2 mb-4 md:mb-8 text-white">
+          <h2 className="h2 font-semibold mb-4 md:mb-8 text-white">
           Explore{" "}
-                          <span className=" bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
-                          Our Features
-                          </span>
-                    </h2>
+          <span className=" bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
+          Our Features
+          </span>
+          </h2>
 </div>
     <div className="container md:pb-10">
       
@@ -49,7 +49,7 @@ const Roadmap = () => (
                   </div>
                   <div className="mb-10 -my-10 -mx-15">
                     {item.id === "0" && (
-                      <img src={userPage2} alt="Neural Networks" />
+                      <img src={userPage2} alt="Neural Networks" className="object-cover" />
                     )}
                     {item.id === "1" && (
                       <img src={adminPage2} alt="IntelliSense" />
