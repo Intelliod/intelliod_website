@@ -219,83 +219,19 @@ export const checklistItems = [
 ];
 
 
-// export const features = [
-//   {
-//     icon: <Signal />,
-//     text: "Telecommunications",
-//     description: [
-//       "Create virtual replicas of physical towers to facilitate effective management. This allows for improved resource allocation and reduced downtime. Real-time monitoring ensures operational efficiency and responsiveness."
-//     ],
-//     summary: "Transform telecommunications with innovative digital solutions."
-//   },
-//   {
-//     icon: <Heart />,
-//     text: "Healthcare",
-//     description: [
-//       "Enhanced patient care is achieved through advanced technology and predictive analytics. Telemedicine solutions bridge the gap for remote healthcare access. This integration improves patient outcomes and streamlines care delivery."
-//     ],
-//     summary: "Revolutionize healthcare with data-driven patient support."
-//   },
-//   {
-//     icon: <Truck />,
-//     text: "Logistics",
-//     description: [
-//       "Enhance supply chain efficiency with real-time tracking capabilities. This ensures transparency and accountability throughout the logistics process. Predictive analytics further empower decision-making and optimize operations."
-//     ],
-//     summary: "Optimize logistics operations for better delivery outcomes."
-//   },
-//   {
-//     icon: <FileText />,
-//     text: "Retail and E-Commerce",
-//     description: [
-//       "Utilize AI to extract and analyze data for valuable insights into consumer behavior. Streamlining workflows enhances operational accuracy and speed. This data-driven approach can significantly boost sales and customer satisfaction."
-//     ],
-//     summary: "Elevate retail strategies through intelligent data use."
-//   },
-//   {
-//     icon: <BarChart />, 
-//     text: "Real Estate and Construction",
-//     description: [
-//       "Smart building solutions offer innovative project management capabilities. Market analysis tools provide crucial insights for strategic decision-making. Enhanced visualization techniques help clients understand potential investments better."
-//     ],
-//     summary: "Transform real estate with innovative construction solutions."
-//   },
-//   {
-//     icon: <Briefcase />, 
-//     text: "Manufacturing",
-//     description: [
-//       "Boost operational efficiency through the implementation of predictive maintenance strategies. This minimizes unexpected downtimes and optimizes production processes. Supply chain optimization further enhances productivity and reduces costs."
-//     ],
-//     summary: "Advance manufacturing processes through smart technologies."
-//   },
-// ];
-
-// Aadhya----------------------------------------------------
-
-
 import {
 
   benefitImage2,
-  chromecast,
-  disc02,
   discord,
-  discordBlack,
-  facebook,
   figma,
-  file02,
   framer,
-  homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
   notion,
   photoshop,
-  plusSquare,
   protopie,
   raindrop,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
@@ -303,9 +239,6 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
-  twitter,
-  yourlogo,
  
 } from "../assets";
 
@@ -351,11 +284,9 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -363,13 +294,7 @@ export const brainwaveServices = [
   "Seamless Integration",
 ];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
+
 
 export const roadmap = [
   {
@@ -395,7 +320,7 @@ export const roadmap = [
     id: "3",
     title: "Sources",
     text: "A completely redesigned experience to keep you in flow.",
-    imageUrl: roadmap4,
+    // imageUrl: roadmap4,
   },
 ];
 
@@ -541,38 +466,6 @@ export const benefits = [
   },
 ]
 
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
-];
 
 export const solutions = [
   {

@@ -3,7 +3,6 @@ import HeroSection from "../components/MBS/HeroSection";
 import Workflow from "../components/MBS/Workflow";
 import Footer from "../components/Footer";
 import { navItems } from "../constants";
-import About from "../components/MBS/About";
 import CaseStudy from "../components/MBS/CaseStudy";
 import Sector from "../components/MBS/Sector";
 

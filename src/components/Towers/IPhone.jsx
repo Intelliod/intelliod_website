@@ -1,26 +1,3 @@
-// import React, { useRef } from 'react'
-// import { useGLTF } from '@react-three/drei'
-
-// function Model(props) {
-//   const { nodes, materials } = useGLTF('/models/KNTYS00322A_Model_2.glb')
-//   return (
-//     <group {...props} dispose={null}>
-//        <group rotation={[-Math.PI / 3, 0, 0]}>
-//       <mesh
-//         castShadow
-//         receiveShadow
-//         geometry={nodes.Mesh_0_Part_0.geometry}
-//         material={nodes.Mesh_0_Part_0.material}
-//       />
-//         </group>
-//     </group>
-//   )
-// }
-
-// export default Model;
-// useGLTF.preload('/models/KNTYS00322A_Model_2.glb')
-
-
 import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 

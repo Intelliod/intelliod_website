@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-
-
-
-import video4 from '../../assets/railway.mp4';
 import Popup from './Popup';
 
 function Projects() {
