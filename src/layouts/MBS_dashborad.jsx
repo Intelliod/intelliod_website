@@ -16,7 +16,7 @@ const MBS = () => {
       <div id="home">
         <HeroSection />
       </div>
-      <div className="pt-10 px-6">
+      <div className="pt-10">
       <div id="workflow" className="pt-10 md:py-20 max-w-7xl mx-auto ">
           <CaseStudy />
         </div>

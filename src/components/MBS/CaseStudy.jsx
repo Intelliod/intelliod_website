@@ -4,7 +4,7 @@ import { checklistItems } from "../../constants";
 
 const CaseStudy = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 px-6">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
       What Sets Us {" "}
         <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">

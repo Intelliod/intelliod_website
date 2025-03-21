@@ -75,14 +75,14 @@ function Workflow() {
 
   return (
 
-    <div className='items-center'>
+    <div className='items-center px-6'>
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-center mt-6 tracking-wide">
         Intelligence done{" "}
         <span className="bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text">
           RIGHT
         </span>
       </h2>
-      <div ref={sectionRefs[0]} className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-20 border-b border-neutral-700 space-y-10 lg:space-y-0 items-center'>
+      <div ref={sectionRefs[0]} className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-10 md:py-20 border-b border-neutral-700 space-y-10 lg:space-y-0 items-center'>
         <video src="https://intelliod.s3.ap-south-1.amazonaws.com/videos/video3.mp4" autoPlay muted loop className='w-[90%] lg:w-[40%] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='mb-2 text-2xl md:text-4xl font-semibold text-blue-600 '>

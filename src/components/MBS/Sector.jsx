@@ -221,7 +221,7 @@ function Sectors() {
 
   return (
     <div className="py-4 md:px-10 ">
-      <div className='lg:px-20 text-left bg-clip-text mb-12'>
+      <div className='lg:px-20 text-left bg-clip-text mb-12 px-6'>
         <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold mb-3">Technologies Transforming</h1>
         <span className="text-3xl md:text-4xl lg:text-6xl bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text font-semibold">
         Industry Sectors
