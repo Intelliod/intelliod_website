@@ -15,14 +15,14 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: "TECHNOLOGIES", href: "#technologies",dropdownItems: [
+    { label: "Technologies", href: "#technologies",dropdownItems: [
       { label: 'Digital Twin', href: '/towers_page' },
       { label: 'Computer Vision', href: '/cv_page' },
       { label: 'Document Intelligence', href: '/aadhya_page' },
     ] },
-    { label: "ABOUT US", href: "/about", dropdownItems: [] },
-
-    { label: "CONTACT US", href: "#footer", dropdownItems: [] , onClick: handleScrollToFooter },
+    { label: "About Us", href: "/about", dropdownItems: [] },
+    { label: "Contact Us", href: "#footer", dropdownItems: [] , onClick: handleScrollToFooter },
+    { label: "Careers Page", href: "/careerspage", dropdownItems: [] },
   ];
 
   const toggleNavbar = () => {
