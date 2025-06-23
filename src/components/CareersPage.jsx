@@ -101,7 +101,7 @@ export default function CareersPage() {
   }
 
   try {
-    const response = await fetch("http://13.202.84.210:3001/apply", {
+    const response = await fetch("https://intelliod-backend.onrender.com/apply", {
       method: "POST",
       body: formDataToSend,
     });
