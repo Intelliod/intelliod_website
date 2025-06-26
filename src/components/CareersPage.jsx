@@ -8,26 +8,36 @@ const JOBS = [
     title: "Frontend Developer",
     description: "React, Tailwind, Next Js experience required.",
     qualificationRequired: "Graduation",
-    location: "Hyderabad",
+    location: "Vizag, India",
     type: "Full-time",
+    salary: "₹6 - ₹10 LPA",
+    experience: "2+ years",
+    skills: ["React", "Tailwind CSS", "Next.js", "JavaScript"],
   },
   {
     id: 2,
     title: "Backend Developer",
     description: "Node.js, Express, MongoDB experience needed.",
     qualificationRequired: "Post Graduation",
-    location: "Remote",
+    location: "Vizag, India",
     type: "Full-time",
+    salary: "₹8 - ₹14 LPA",
+    experience: "3+ years",
+    skills: ["Node.js", "Express", "MongoDB", "REST APIs"],
   },
   {
     id: 3,
     title: "UI/UX Designer",
     description: "Figma, Adobe XD skills are a must.",
     qualificationRequired: "Graduation",
-    location: "Visakhapatnam",
+    location: "Vizag, India",
     type: "Hybrid",
+    salary: "₹5 - ₹8 LPA",
+    experience: "1-3 years",
+    skills: ["Figma", "Adobe XD", "User Research", "Wireframing"],
   },
 ];
+
 
 export default function CareersPage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -135,9 +145,9 @@ export default function CareersPage() {
   });
 
   return (
-    <div>
+    <div className="text-white min-h-screen bg-gray-800">
     <Navbar />
-    <div className="max-w-6xl mx-auto p-6 min-h-screen ">
+    <div className="max-w-6xl mx-auto p-6 min-h-screen">
       <h1 className="text-4xl font-bold mb-8 text-center">Careers</h1>
       <div className="mb-8 grid gap-4 md:grid-cols-1">
         <input
@@ -151,10 +161,10 @@ export default function CareersPage() {
       </div>
 
       {/* Jobs Grid */}
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-1">
         {filteredJobs.length > 0 ? (
           filteredJobs.map((job) => (
-            <div key={job.id} className="border bg-gray-700 hover:bg-gray-800 delay-100 rounded-md p-6 shadow hover:shadow-lg transition">
+            <div key={job.id} className="border bg-gray-700 hover:shadow-xl delay-100 rounded-md p-6 shadow hover:shadow-lg transition">
               <h2 className="text-xl font-semibold mb-2">{job.title}</h2>
               <p className="mb-2 text-gray-400">{job.description}</p>
               <p className="text-sm text-gray-400">
@@ -168,7 +178,7 @@ export default function CareersPage() {
               </p>
               <button
                 onClick={() => openApplyModal(job)}
-                className="mt-4 bg-gradient-to-r from-[#120a8f] to-[#0038a8] text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="mt-4 bg-[#0038a8] text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               >
                 Apply
               </button>

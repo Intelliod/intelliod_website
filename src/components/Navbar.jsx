@@ -4,10 +4,10 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-  const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // Track which dropdown is open
+  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
 
   const handleScrollToFooter = (event) => {
-    event.preventDefault(); // Prevent default anchor link behavior
+    event.preventDefault(); 
     const footerElement = document.getElementById("footer");
     if (footerElement) {
       footerElement.scrollIntoView({ behavior: "smooth" });
@@ -22,7 +22,7 @@ const Navbar = () => {
     ] },
     { label: "About Us", href: "/about", dropdownItems: [] },
     { label: "Contact Us", href: "#footer", dropdownItems: [] , onClick: handleScrollToFooter },
-    { label: "Careers Page", href: "/careerspage", dropdownItems: [] },
+    { label: "Careers", href: "/careerspage", dropdownItems: [] },
   ];
 
   const toggleNavbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b backdrop-blur-xl border-neutral-200 px-2 md:pt-4">
+    <nav className="sticky top-0 z-50 backdrop-blur-xl border-neutral-200 px-2 md:pt-4">
       <div className=" lg:px-10 mx-auto lg:text-sm ">
         <div className="flex justify-between items-center ">
           <div className="flex flex-shrink-0 py-3 rounded-xl ml-0 sm:ml-0 lg:ml-10 ">
@@ -43,28 +43,28 @@ const Navbar = () => {
               <h1 className="text-4xl px-5 py-3 font-bold text-white">INTELLIOD</h1>
             </a>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-lg">
+          <ul className="hidden lg:flex ml-14 space-x-12 text-lg items-center text-white">
             {navItems.map((item, index) => (
               <li key={index} className="relative">
                 <button
                   onClick={() => toggleDropdown(index)}
-                  className="hover:text-[#007fff] focus:outline-none flex items-center"
+                  className="hover:text-[#007fff] focus:outline-none flex items-center "
                   aria-expanded={openDropdownIndex === index}
                 >
                   <span className="flex items-center">
-                    <a href={item.href} className="hover:text-[#007fff] md:text-md lg:text-lg">
+                    <a href={item.href} className="hover:text-[#007fff] md:text-md lg:text-sm">
                       {item.label}
                     </a>
-                    {item.dropdownItems.length > 0 && <RiArrowDropDownLine className='w-8 h-8 ml-1' />}
+                    {item.dropdownItems.length > 0 && <RiArrowDropDownLine className='w-6 h-6 ml-1' />}
                   </span>
                 </button>
                 {openDropdownIndex === index && item.dropdownItems.length > 0 && (
-                  <ul className="absolute bg-[#E5E5E5] rounded-b-xl shadow-lg mt-1 p-1">
+                  <ul className="absolute bg-gray-900 text-white rounded-xl shadow-lg mt-1 p-1">
                     {item.dropdownItems.map((dropdownItem, i) => (
-                      <li key={i} className="px-2 py-3 hover:bg-gray-200 hover:rounded-md text-white">
+                      <li key={i} className="px-2 py-1 hover:bg-gray-800 hover:rounded-md hover:text-[#007fff] text-white">
                         <a 
                           href={dropdownItem.href} 
-                          className="text-gray-600 text-md" 
+                          className=" text-sm md:text-md lg:text-[0.7rem]  focus:outline-none" 
                           style={{ whiteSpace: 'nowrap' }}
                         >
                           {dropdownItem.label}
@@ -91,17 +91,17 @@ const Navbar = () => {
         </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-200 w-full py-5 px-6 flex flex-col text-black rounded-xl lg:hidden">
+          <div className="fixed right-0 z-20 bg-gray-900 w-full py-5 px-6 flex flex-col text-white rounded-b-xl lg:hidden">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="relative">
                   <button
                     onClick={() => toggleDropdown(index)}
-                    className="hover:text-[#FF6F20] focus:outline-none flex items-center"
+                    className="hover:text-[#007fff] focus:outline-none flex items-center"
                     aria-expanded={openDropdownIndex === index}
                   >
                     <span className="flex items-center">
-                      <a href={item.href} className="hover:text-[#FF6F20] sm:text-lg md:text-xl md:text-xl mt-4">
+                      <a href={item.href} className="hover:text-[#007fff] mt-4 text-sm">
                         {item.label}
                       </a>
                       {item.dropdownItems.length > 0 && <RiArrowDropDownLine className='w-8 h-8 ml-1 mt-3' />}
@@ -111,7 +111,7 @@ const Navbar = () => {
                     <ul className="ml-4 mt-2 space-y-2">
                       {item.dropdownItems.map((dropdownItem, i) => (
                         <li key={i}>
-                          <a href={dropdownItem.href} className="block text-gray-600 text-md hover:text-[#FF6F20]">{dropdownItem.label}</a>
+                          <a href={dropdownItem.href} className="block text-[0.8rem] hover:text-[#007fff]">{dropdownItem.label}</a>
                         </li>
                       ))}
                     </ul>

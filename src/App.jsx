@@ -7,7 +7,6 @@ import Aadhya_dashboard from './layouts/Aadhya_dashboard.jsx';
 import About from './components/About.jsx'; 
 import CareersPage from './components/CareersPage.jsx';
 
-
 function App() {
   return (
     <>
