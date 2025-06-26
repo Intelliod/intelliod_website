@@ -1,0 +1,123 @@
+// src/data/jobData.js
+const JOBS = [
+  {
+    id: 1,
+    title: "Frontend Developer",
+    description: "React, Tailwind, Next Js experience required.",
+    fullDescription:
+      "We are looking for a talented Frontend Developer to join our team. In this role, you will be responsible for developing responsive and dynamic user interfaces using modern web technologies. You'll work closely with designers, backend developers, and product managers to build high-quality web applications that scale.",
+    responsibilities: [
+      "Design and develop highly responsive UI components using React and Tailwind CSS",
+      "Collaborate with backend engineers to integrate RESTful APIs into frontend logic",
+      "Write clean, maintainable, and reusable code",
+      "Optimize applications for performance and scalability",
+      "Work in agile teams and participate in sprint planning and reviews",
+    ],
+    qualificationRequired: "Graduation",
+    basicQualifications: [
+      "Bachelor's degree in Computer Science or related field",
+      "2+ years of experience in React and JavaScript",
+      "Proficiency in Tailwind CSS and responsive design",
+    ],
+    preferredQualifications: [
+      "Experience with Next.js",
+      "Familiarity with CI/CD pipelines",
+      "Knowledge of TypeScript is a plus",
+    ],
+    location: "Vizag, India",
+    type: "Full-time",
+    salary: "Not disclosed",
+    experience: "2+ years",
+    skills: ["React", "Tailwind CSS", "Next.js", "JavaScript", "HTML5", "CSS3"],
+    companyName: "TechNova Solutions",
+    postedDate: "2025-04-01",
+    deadline: "2025-04-30",
+    benefits: [
+      "Health insurance coverage",
+      "Flexible working hours",
+      "Remote work options",
+      "Annual performance bonus",
+      "Learning & development allowance",
+    ],
+  },
+  {
+    id: 2,
+    title: "Backend Developer",
+    description: "Node.js, Express, MongoDB experience needed.",
+    fullDescription:
+      "As a Backend Developer, you’ll be responsible for designing, building, and maintaining scalable server-side applications and APIs. You will collaborate with frontend developers, DevOps engineers, and QA teams to ensure seamless integration across systems and services.",
+    responsibilities: [
+      "Develop and maintain RESTful and GraphQL APIs",
+      "Build and manage microservices architecture",
+      "Ensure high performance and responsiveness of applications",
+      "Implement security and data protection mechanisms",
+      "Work with databases like MongoDB and PostgreSQL",
+    ],
+    qualificationRequired: "Post Graduation",
+    basicQualifications: [
+      "Strong foundation in JavaScript and Node.js",
+      "Experience with MongoDB and RESTful APIs",
+    ],
+    preferredQualifications: [
+      "Knowledge of GraphQL",
+      "Experience with Docker and Kubernetes",
+      "Understanding of cloud platforms (AWS/GCP)",
+    ],
+    location: "Vizag, India",
+    type: "Full-time",
+    salary: "Not disclosed",
+    experience: "3+ years",
+    skills: ["Node.js", "Express", "MongoDB", "REST APIs", "GraphQL", "Docker"],
+    companyName: "InnovateX Technologies",
+    postedDate: "2025-04-05",
+    deadline: "2025-05-05",
+    benefits: [
+      "Comprehensive health insurance",
+      "Performance-based bonuses",
+      "Opportunity for international client exposure",
+      "Free access to tech courses and certifications",
+      "Paid time off and flexible PTO policy",
+    ],
+  },
+  {
+    id: 3,
+    title: "UI/UX Designer",
+    description: "Figma, Adobe XD skills are a must.",
+    fullDescription:
+      "We’re seeking a passionate UI/UX Designer who can turn our software into easy-to-use, beautiful, and intuitive products. You will work on both new features and enhancements to existing applications, ensuring consistency and usability across all platforms.",
+    responsibilities: [
+      "Create wireframes, mockups, and interactive prototypes",
+      "Conduct user research and testing sessions",
+      "Collaborate with product managers and developers",
+      "Maintain and evolve the product’s visual language",
+      "Prepare assets and documentation for design handoff",
+    ],
+    qualificationRequired: "Graduation",
+    basicQualifications: [
+      "Strong portfolio with UI/UX design projects",
+      "Proficiency in design tools such as Figma, Adobe XD",
+    ],
+    preferredQualifications: [
+      "Experience working with product teams",
+      "Understanding of HTML/CSS for design handoffs",
+      "Knowledge of accessibility standards and best practices",
+    ],
+    location: "Vizag, India",
+    type: "Hybrid",
+    salary: "Not disclosed",
+    experience: "1-3 years",
+    skills: ["Figma", "Adobe XD", "User Research", "Wireframing", "Prototyping"],
+    companyName: "PixelCraft Studio",
+    postedDate: "2025-04-10",
+    deadline: "2025-05-10",
+    benefits: [
+      "Creative freedom and ownership of design decisions",
+      "Flexible work schedule",
+      "Access to premium design tools and libraries",
+      "Mentorship from senior designers",
+      "Quarterly creative retreats",
+    ],
+  },
+];
+
+export default JOBS;

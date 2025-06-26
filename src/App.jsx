@@ -6,6 +6,7 @@ import CV_dashboard from './layouts/CV_dashboard.jsx'
 import Aadhya_dashboard from './layouts/Aadhya_dashboard.jsx';
 import About from './components/About.jsx'; 
 import CareersPage from './components/CareersPage.jsx';
+import JobDetailsPage from './components/JobDetailsPage.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
        <Route path="/aadhya_page" element={<Aadhya_dashboard/>} />
        <Route path="/about" element={<About />} />
        <Route path="careerspage" element={<CareersPage/>} />
+       <Route path="/job/:id" element={<JobDetailsPage />} />
      </Routes>
    </Router>
     </>
