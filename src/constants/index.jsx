@@ -195,7 +195,7 @@ export const productsOptions = [
 
 export const footerLinks = [
   { text: "About Us", href: "/about" },
-  // { text: "Features", href: "#features" },
+  { text: "Careers", href: "/careerspage" },
 ];
 
 
