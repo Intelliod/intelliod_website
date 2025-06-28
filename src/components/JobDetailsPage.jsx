@@ -24,6 +24,7 @@ export default function JobDetailsPage() {
     qualification: "",
     specialization: "",
     experience: "",
+    linkedin: "",
     resume: null,
   });
   const [message, setMessage] = useState("");
@@ -39,6 +40,7 @@ export default function JobDetailsPage() {
       qualification: "",
       specialization: "",
       experience: "",
+      linkedin: "",
       resume: null,
     });
   };
@@ -61,7 +63,8 @@ export default function JobDetailsPage() {
       !formData.email ||
       !formData.qualification ||
       !formData.specialization ||
-      !formData.experience
+      !formData.experience ||
+      !formData.linkedin 
     ) {
       setMessage("Please fill in all required fields.");
       return;
@@ -76,6 +79,7 @@ export default function JobDetailsPage() {
     formDataToSend.append("qualification", formData.qualification);
     formDataToSend.append("specialization", formData.specialization);
     formDataToSend.append("experience", formData.experience);
+    formDataToSend.append("linkedin", formData.linkedin);
     formDataToSend.append("jobTitle", selectedJob.title);
     if (formData.resume) formDataToSend.append("resume", formData.resume);
 
@@ -288,6 +292,18 @@ export default function JobDetailsPage() {
                 ></textarea>
               </div>
               <div>
+                <label htmlFor="linkedin" className="block font-medium mb-1">LinkedIn URL *</label>
+                <input
+                  type="url"
+                  id="linkedin"
+                  name="linkedin"
+                  value={formData.linkedin}
+                  onChange={handleInputChange}
+                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  required
+                ></input>
+              </div>
+              <div>
                 <label htmlFor="resume" className="block font-medium mb-1">Upload Resume (PDF, DOC, DOCX)</label>
                 <input
                   id="resume"
@@ -306,15 +322,16 @@ export default function JobDetailsPage() {
                   {message}
                 </p>
               )}
-              <button
+            <button
                 type="submit"
                 disabled={loading}
                 className={`w-full py-3 rounded text-white font-semibold ${
-                  loading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
+                  loading ? "bg-gray-400" : "bg-[#1D4ED8]"
                 }`}
               >
                 {loading ? "Submitting..." : "Submit Application"}
               </button>
+
             </form>
           </div>
         </div>
