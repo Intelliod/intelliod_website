@@ -2,7 +2,7 @@
 const JOBS = [
   {
     id: 1,
-    title: "Frontend Developer (React Native)",
+    title: "Frontend Developer",
     description: "React Native, REST API, SSO experience required.",
     fullDescription:
       "We are looking for a talented Frontend Developer to build and maintain a modular React Native SDK for embedding into mobile apps. You will be responsible for implementing multilingual and RTL support, integrating secure Single Sign-On (SSO), and designing responsive interfaces for messaging and communication channels.",
@@ -45,7 +45,7 @@ const JOBS = [
   },
   {
     id: 2,
-    title: "Backend Developer (Node.js + Integration)",
+    title: "Backend Developer",
     description: "Node.js, Express, Twilio/WhatsApp API experience needed.",
     fullDescription:
       "As a Backend Developer, you'll be responsible for building and maintaining secure REST APIs to support messaging workflows, integrating third-party services like Twilio and WhatsApp, and routing data securely between frontend applications and Salesforce systems.",
