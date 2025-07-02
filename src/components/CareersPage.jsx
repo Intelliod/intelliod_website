@@ -7,25 +7,20 @@ import JOBS from "./jobData";
 export default function CareersPage() {
   const navigate = useNavigate();
 
-  // Filters
+  // Filters for job search
   const [searchTerm, setSearchTerm] = useState("");
-  const [filterQualification, setFilterQualification] = useState("");
   const [filterLocation, setFilterLocation] = useState("");
 
-  const qualifications = [...new Set(JOBS.map((job) => job.qualificationRequired))];
-
+  // Filtered jobs based on search and location
   const filteredJobs = JOBS.filter((job) => {
     const matchesSearch =
       job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       job.description.toLowerCase().includes(searchTerm.toLowerCase());
 
-    const matchesQualification =
-      filterQualification === "" || job.qualificationRequired === filterQualification;
-
     const matchesLocation =
       filterLocation === "" || job.location.toLowerCase().includes(filterLocation.toLowerCase());
 
-    return matchesSearch && matchesQualification && matchesLocation;
+    return matchesSearch && matchesLocation;
   });
 
   return (
