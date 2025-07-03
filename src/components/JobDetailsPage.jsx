@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import JOBS from "./jobData";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function JobDetailsPage() {
   const { id } = useParams();
@@ -99,16 +101,32 @@ export default function JobDetailsPage() {
 
       const data = await response.json();
 
-      if (data.success) {
-        setMessage("Application submitted successfully!");
-        setTimeout(() => {
-          closeModal();
-        }, 2000);
-      } else {
-        throw new Error(data.message || "Failed to submit");
-      }
+    if (data.success) {
+      toast.success("Application submitted successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      setMessage("Application submitted successfully!");
+      setTimeout(() => {
+        closeModal();
+      }, 2000);
+    } else {
+      throw new Error(data.message || "Failed to submit");
+    }
+
     } catch (error) {
       console.error("Error submitting application:", error);
+      toast.error("Failed to send application. Please try again later.", {
+      position: "top-right",
+      autoClose: 3000,
+      theme: "colored",
+    });
       setMessage("Failed to send application. Please try again later.");
     } finally {
       setLoading(false);
@@ -223,7 +241,7 @@ export default function JobDetailsPage() {
       {/* Apply Modal */}
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-6 sm:p-2 sm:p-4 ">
-          <div className="bg-white rounded-lg w-full max-w-md sm:max-w-lg p-4 sm:p-6 relative text-gray-800 shadow-2xl max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-lg w-full max-w-md sm:max-w-lg p-4 sm:p-6 relative text-gray-800 shadow-2xl max-h-[90vh] sm:max-h-full overflow-y-auto">
             <button
               onClick={closeModal}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
@@ -375,6 +393,18 @@ export default function JobDetailsPage() {
         </div>
       )}
       <Footer />
+      <ToastContainer
+      position="top-right"
+      autoClose={3000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+    />
     </div>
   );
 }
