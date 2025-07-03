@@ -21,8 +21,7 @@ const Navbar = () => {
       { label: 'Document Intelligence', href: '/aadhya_page' },
     ] },
     { label: "About Us", href: "/about", dropdownItems: [] },
-    { label: "Contact Us", href: "#footer", dropdownItems: [] , onClick: handleScrollToFooter },
-    { label: "Careers", href: "/careerspage", dropdownItems: [] },
+    { label: "Careers", href: "/careers", dropdownItems: [] },
   ];
 
   const toggleNavbar = () => {

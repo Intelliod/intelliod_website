@@ -16,9 +16,9 @@ function App() {
        <Route path="/" element={<MBS />} />
        <Route path="/towers_page" element={<Towers />} />
        <Route path="/cv_page" element={<CV_dashboard />} />
-       <Route path="/aadhya_page" element={<Aadhya_dashboard/>} />
+       <Route path="/aadhya_page" element={<Aadhya_dashboard />} />
        <Route path="/about" element={<About />} />
-       <Route path="careerspage" element={<CareersPage/>} />
+       <Route path="/careers" element={<CareersPage />} />
        <Route path="/job/:id" element={<JobDetailsPage />} />
      </Routes>
    </Router>

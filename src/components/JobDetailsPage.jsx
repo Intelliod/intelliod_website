@@ -84,7 +84,7 @@ export default function JobDetailsPage() {
     if (formData.resume) formDataToSend.append("resume", formData.resume);
 
     try {
-      const response = await fetch("https://intelliod-backend.onrender.com/apply ", {
+      const response = await fetch("http://localhost:3001/apply", {
         method: "POST",
         body: formDataToSend,
       });
@@ -115,7 +115,7 @@ export default function JobDetailsPage() {
       <main className="max-w-[70%] mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Back Button */}
         <button
-          onClick={() => navigate("/careerspage")}
+          onClick={() => navigate("/careers")}
           className="mb-6 text-blue-400 hover:text-blue-300 flex items-center gap-2 group"
         >
           <span className="transform group-hover:-translate-x-1 transition-transform">&larr;</span> Back to Jobs

@@ -44,18 +44,7 @@ const About = () => {
                 About <span className='bg-gradient-to-r from-[#0038a8] to-white text-transparent bg-clip-text'> Us</span>
               </h1>
               <p id="about-content" className="text-md md:text-md text-gray-400 leading-relaxed mt-4 md:mt-7">
-                Welcome to <strong>Intelliod</strong>, where innovation meets excellence. 
-                We specialize in cutting-edge technologies, including Digital Twin, 
-                Computer Vision, and Document Intelligence, to help businesses 
-                streamline their operations.
-              </p>
-              <p
-                id="about-content"
-                className="text-md md:text-md text-gray-400 leading-relaxed mt-4 md:mt-7"
-              >
-                Our mission is to leverage AI-powered solutions to drive efficiency 
-                and enable smarter decision-making. With a dedicated team of experts, 
-                we are committed to transforming industries through technology.
+               Intelliod is a strategic subsidiary of MBS Global Investments, established in India to advance innovation in data analytics, spatial digital twins, artificial intelligence, and computer vision. Intelliod develops cutting-edge platforms that address critical challenges across governance, agriculture, urban infrastructure, and disaster resilience.
               </p>
             </div>
             <img
