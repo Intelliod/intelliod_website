@@ -213,129 +213,146 @@ export default function JobDetailsPage() {
       </main>
 
       {/* Apply Modal */}
-      {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg max-w-lg w-full p-6 relative text-gray-800 shadow-2xl">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
-              aria-label="Close modal"
-            >
-              &times;
-            </button>
-            <h3 className="text-2xl font-bold mb-4">Apply for {selectedJob.title}</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block font-medium mb-1">Full Name *</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block font-medium mb-1">Email Address *</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="qualification" className="block font-medium mb-1">Qualification *</label>
-                <select
-                  id="qualification"
-                  name="qualification"
-                  value={formData.qualification}
-                  onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                >
-                  <option value="">Select Qualification</option>
-                  <option value="Graduation">Graduation</option>
-                  <option value="Post Graduation">Post Graduation</option>
-                  <option value="Diploma">Diploma</option>
-                  <option value="Others">Others</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="specialization" className="block font-medium mb-1">Specialization *</label>
-                <input
-                  id="specialization"
-                  name="specialization"
-                  type="text"
-                  value={formData.specialization}
-                  onChange={handleInputChange}
-                  placeholder="E.g. Computer Science"
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="experience" className="block font-medium mb-1">Experience *</label>
-                <textarea
-                  id="experience"
-                  name="experience"
-                  rows={3}
-                  value={formData.experience}
-                  onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <label htmlFor="linkedin" className="block font-medium mb-1">LinkedIn URL *</label>
-                <input
-                  type="url"
-                  id="linkedin"
-                  name="linkedin"
-                  value={formData.linkedin}
-                  onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  required
-                ></input>
-              </div>
-              <div>
-                <label htmlFor="resume" className="block font-medium mb-1">Upload Resume (PDF, DOC, DOCX)</label>
-                <input
-                  id="resume"
-                  name="resume"
-                  type="file"
-                  accept=".pdf,.doc,.docx"
-                  onChange={handleInputChange}
-                  className="border border-gray-300 rounded px-3 py-2 w-full bg-gray-50 file:rounded file:border-0 file:bg-blue-600 file:text-white file:px-4 file:py-2 hover:file:bg-blue-700 cursor-pointer"
-                />
-                {formData.resume && (
-                  <p className="mt-1 text-sm text-gray-500">{formData.resume.name}</p>
-                )}
-              </div>
-              {message && (
-                <p className={`font-medium ${message.includes("success") ? "text-green-600" : "text-red-600"}`}>
-                  {message}
-                </p>
-              )}
-            <button
-                type="submit"
-                disabled={loading}
-                className={`w-full py-3 rounded text-white font-semibold ${
-                  loading ? "bg-gray-400" : "bg-[#1D4ED8]"
-                }`}
-              >
-                {loading ? "Submitting..." : "Submit Application"}
-              </button>
-
-            </form>
-          </div>
+{modalOpen && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-6 sm:p-2 sm:p-4">
+    <div className="bg-white rounded-lg w-full max-w-md sm:max-w-lg p-4 sm:p-6 relative text-gray-800 shadow-2xl overflow-y-auto max-h-screen">
+      <button
+        onClick={closeModal}
+        className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
+        aria-label="Close modal"
+      >
+        &times;
+      </button>
+      <h3 className="text-xl sm:text-2xl font-bold mb-4 mt-2 sm:mt-0">Apply for {selectedJob.title}</h3>
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 text-sm sm:text-base">
+        {/* Full Name */}
+        <div>
+          <label htmlFor="name" className="block font-medium mb-1">Full Name *</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value={formData.name}
+            onChange={handleInputChange}
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
         </div>
-      )}
+
+        {/* Email */}
+        <div>
+          <label htmlFor="email" className="block font-medium mb-1">Email Address *</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        {/* Qualification */}
+        <div>
+          <label htmlFor="qualification" className="block font-medium mb-1">Qualification *</label>
+          <select
+            id="qualification"
+            name="qualification"
+            value={formData.qualification}
+            onChange={handleInputChange}
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          >
+            <option value="">Select Qualification</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Post Graduation">Post Graduation</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        {/* Specialization */}
+        <div>
+          <label htmlFor="specialization" className="block font-medium mb-1">Specialization *</label>
+          <input
+            id="specialization"
+            name="specialization"
+            type="text"
+            value={formData.specialization}
+            onChange={handleInputChange}
+            placeholder="E.g. Computer Science"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        {/* Experience */}
+        <div>
+          <label htmlFor="experience" className="block font-medium mb-1">Experience *</label>
+          <textarea
+            id="experience"
+            name="experience"
+            rows={3}
+            value={formData.experience}
+            onChange={handleInputChange}
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          ></textarea>
+        </div>
+
+        {/* LinkedIn URL */}
+        <div>
+          <label htmlFor="linkedin" className="block font-medium mb-1">LinkedIn URL *</label>
+          <input
+            type="url"
+            id="linkedin"
+            name="linkedin"
+            value={formData.linkedin}
+            onChange={handleInputChange}
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        {/* Resume Upload */}
+        <div>
+          <label htmlFor="resume" className="block font-medium mb-1">Upload Resume (PDF, DOC, DOCX)</label>
+          <input
+            id="resume"
+            name="resume"
+            type="file"
+            accept=".pdf,.doc,.docx"
+            onChange={handleInputChange}
+            className="border border-gray-300 rounded px-3 py-2 w-full bg-gray-50 file:rounded file:border-0 file:bg-blue-600 file:text-white file:px-4 file:py-2 hover:file:bg-blue-700 cursor-pointer"
+          />
+          {formData.resume && (
+            <p className="mt-1 text-sm text-gray-500">{formData.resume.name}</p>
+          )}
+        </div>
+
+        {/* Message */}
+        {message && (
+          <p className={`font-medium ${message.includes("success") ? "text-green-600" : "text-red-600"}`}>
+            {message}
+          </p>
+        )}
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={loading}
+          className={`w-full py-3 rounded text-white font-semibold ${
+            loading ? "bg-gray-400" : "bg-[#1D4ED8] hover:bg-blue-700"
+          }`}
+        >
+          {loading ? "Submitting..." : "Submit Application"}
+        </button>
+      </form>
+    </div>
+  </div>
+)}
+
 
       <Footer />
     </div>
