@@ -84,7 +84,7 @@ export default function JobDetailsPage() {
     if (formData.resume) formDataToSend.append("resume", formData.resume);
 
     try {
-      const response = await fetch("http://localhost:3001/apply", {
+      const response = await fetch("https://intelliod-backend.onrender.com/apply", {
         method: "POST",
         body: formDataToSend,
       });

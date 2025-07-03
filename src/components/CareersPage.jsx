@@ -31,7 +31,7 @@ export default function CareersPage() {
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-10">
           Explore exciting career opportunities and grow with us in a dynamic environment.
         </p>
-        <div className="grid gap-4 md:grid-cols-2 mb-10">
+        <div className="grid gap-4 md:grid-cols-2 mb-10 items-center">
           <input
             type="text"
             placeholder="Search jobs..."
