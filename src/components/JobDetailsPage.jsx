@@ -223,7 +223,7 @@ export default function JobDetailsPage() {
       {/* Apply Modal */}
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-6 sm:p-2 sm:p-4 ">
-          <div className="bg-white rounded-lg w-full max-w-md sm:max-w-lg p-4 sm:p-6 relative text-gray-800 shadow-2xl overflow-y-auto max-h-screen">
+          <div className="bg-white rounded-lg w-full max-w-md sm:max-w-lg p-4 sm:p-6 relative text-gray-800 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={closeModal}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
