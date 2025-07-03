@@ -112,7 +112,7 @@ export default function JobDetailsPage() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="max-w-[70%] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className=" md:max-w-[70%] mx-auto px-8 sm:px-6 lg:px-8 py-10">
         {/* Back Button */}
         <button
           onClick={() => navigate("/careers")}
