@@ -366,15 +366,15 @@ export default function JobDetailsPage() {
         {/* GitHub Repositories */}
         <div>
           <label htmlFor="githubRepos" className="block font-medium mb-1 text-xs sm:text-sm">GitHub Repositories (Optional)</label>
-          <input
+            <textarea
             id="githubRepos"
             name="githubRepos"
-            type="url"
+            rows={2}
             value={formData.githubRepos || ""}
             onChange={handleInputChange}
-            placeholder="https://github.com/yourusername/project1 "
-            className="w-full border border-gray-300 rounded px-2 py-1 sm:px-3 sm:py-2 bg-gray-50 focus:outline-none focus:ring-1 sm:focus:ring-2 focus:ring-blue-400 text-xs sm:text-sm"
-          />
+            placeholder="Enter GitHub repository links, one per line"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400 text-xs"
+          ></textarea>
              <p className="text-xs text-gray-500 mt-1">
             Share one or more GitHub links related to this job.
           </p>
