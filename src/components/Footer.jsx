@@ -29,7 +29,7 @@ const Footer = () => {
           <h1 className="font-semibold text-base sm:text-lg">Follow Us</h1>
           <div className="flex gap-3 ml-4 text-xl sm:text-2xl">
             <a
-              href="https://www.linkedin.com/company/mbs-global-investments/"
+              href="https://www.linkedin.com/company/intelliod-tech/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#007fff]"
@@ -37,7 +37,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="mailto:mbstect.ai@gmail.com"
+              href="mailto:contact@intelliod.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#007fff]"
