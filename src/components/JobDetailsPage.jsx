@@ -32,7 +32,11 @@ export default function JobDetailsPage() {
     linkedin: "",
     githubRepos: "",
     resume: null,
+    expectedSalary: "",
+    relocate: "",
+    noticePeriod: ""
   });
+
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -50,6 +54,9 @@ export default function JobDetailsPage() {
       otherQualification: "",
       githubRepos: "",
       resume: null,
+      expectedSalary: "",
+      relocate: "",
+      noticePeriod: ""
     });
   };
 
@@ -73,12 +80,16 @@ export default function JobDetailsPage() {
       !formData.specialization ||
       !formData.experience ||
       !formData.linkedin ||
+      !formData.expectedSalary ||
+      !formData.relocate ||
+      !formData.noticePeriod ||
       (formData.qualification === "Others" && !formData.otherQualification) ||
-      !formData.resume // Ensure resume is always filled
+      !formData.resume
     ) {
       setMessage("Please fill in all required fields.");
       return;
     }
+
 
     setLoading(true);
     setMessage("");
@@ -95,6 +106,10 @@ export default function JobDetailsPage() {
     formDataToSend.append("linkedin", formData.linkedin);
     formDataToSend.append("jobTitle", selectedJob.title);
     formDataToSend.append("githubRepos", formData.githubRepos || ""); // Ensure this is always sent
+    formDataToSend.append("expectedSalary", formData.expectedSalary);
+    formDataToSend.append("relocate", formData.relocate);
+    formDataToSend.append("noticePeriod", formData.noticePeriod);
+
 
     if (formData.resume) formDataToSend.append("resume", formData.resume);
 
@@ -334,21 +349,66 @@ export default function JobDetailsPage() {
                   required
                 />
               </div>
-
-              {/* Experience */}
-              <div>
-                <label htmlFor="experience" className="block font-medium mb-1 text-xs sm:text-sm">Experience *</label>
-                <textarea
-                  id="experience"
-                  name="experience"
-                  rows={2}
-                  value={formData.experience}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Experience */}
+                <div>
+                  <label htmlFor="experience" className="block font-medium mb-1 text-xs sm:text-sm">Experience *</label>
+                  <textarea
+                    id="experience"
+                    name="experience"
+                    rows={2}
+                    value={formData.experience}
+                    onChange={handleInputChange}
+                    className="w-full border border-gray-300 rounded px-2 py-1 sm:px-3 sm:py-2 bg-gray-50 focus:outline-none focus:ring-1 sm:focus:ring-2 focus:ring-blue-400 text-xs sm:text-sm"
+                    required
+                  ></textarea>
+                </div>
+                {/* Expected Salary */}
+                <div>
+                  <label htmlFor="expectedSalary" className="block font-medium mb-1 text-xs sm:text-sm">Expected Salary (₹) *</label>
+                  <input
+                    id="expectedSalary"
+                    name="expectedSalary"
+                    type="number"
+                    value={formData.expectedSalary}
+                    onChange={handleInputChange}
+                    className="w-full border border-gray-300 rounded px-2 py-1 sm:px-3 sm:py-2 bg-gray-50 focus:outline-none focus:ring-1 sm:focus:ring-2 focus:ring-blue-400 text-xs sm:text-sm"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Relocate to Vizag */}
+                <div>
+                  <label htmlFor="relocate" className="block font-medium mb-1 text-xs sm:text-sm">Willing to Relocate to Vizag? *</label>
+                  <select
+                      id="relocate"
+                  name="relocate"
+                  value={formData.relocate}
                   onChange={handleInputChange}
                   className="w-full border border-gray-300 rounded px-2 py-1 sm:px-3 sm:py-2 bg-gray-50 focus:outline-none focus:ring-1 sm:focus:ring-2 focus:ring-blue-400 text-xs sm:text-sm"
                   required
-                ></textarea>
+                >
+                  <option value="">Select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
               </div>
 
+              {/* Notice Period */}
+              <div>
+                <label htmlFor="noticePeriod" className="block font-medium mb-1 text-xs sm:text-sm">Notice Period (in days) *</label>
+                <input
+                  id="noticePeriod"
+                  name="noticePeriod"
+                  type="number"
+                  value={formData.noticePeriod}
+                  onChange={handleInputChange}
+                  className="w-full border border-gray-300 rounded px-2 py-1 sm:px-3 sm:py-2 bg-gray-50 focus:outline-none focus:ring-1 sm:focus:ring-2 focus:ring-blue-400 text-xs sm:text-sm"
+                  required
+                />
+              </div>
+              </div>
               {/* LinkedIn URL */}
               <div>
                 <label htmlFor="linkedin" className="block font-medium mb-1 text-xs sm:text-sm">LinkedIn URL *</label>
