@@ -399,7 +399,7 @@ const JOBS = [
     "Experience working with technical teams or in tech-based environments",
     "Familiarity with CRM and project tracking software",
   ],
-  location: "vishakhapatnam / Hyderabad",
+  location: "Vizag / Hyderabad",
   type: "Full-time",
   salary: "Not disclosed",
   experience: "2–5 years",
