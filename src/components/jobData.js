@@ -370,6 +370,55 @@ const JOBS = [
       "Project-based incentives",
     ],
   },
+  {
+  id: 11,
+  title: "Business Service Group (BSG) Coordinator",
+  description: "Coordinate business services, partnership agreements, and project updates.",
+  fullDescription:
+    "Join the Business Service Group to support organizational objectives through effective coordination of business proposals, partnerships, and back-office operations. You will collaborate with various stakeholders and departments to ensure smooth project execution and administrative efficiency.",
+  responsibilities: [
+    "Coordinate with stakeholders for timely proposal submissions",
+    "Collaborate with the Delivery Lead to maintain effective team communication",
+    "Manage MOUs and partnership agreements with vendors and clients",
+    "Register MBSTECH.AI with potential distributors, vendors, and clients",
+    "Perform administrative tasks to support the team’s operations",
+    "Track project progress and prepare reports for senior management",
+    "Manage budgets, resource allocation, and risk assessments",
+    "Develop contingency plans to address potential delays or issues",
+  ],
+  qualificationRequired: "Bachelor’s in Business Administration, Management, or related field",
+  basicQualifications: [
+    "Experience in coordination or administrative roles within business services",
+    "Strong communication and stakeholder management skills",
+    "Organizational ability to manage multiple deadlines",
+    "Understanding of partnership agreements and MOUs",
+    "Familiarity with project management tools and technology coordination",
+    "Knowledge of resource engagement calculations to derive costs",
+  ],
+  preferredQualifications: [
+    "Experience working with technical teams or in tech-based environments",
+    "Familiarity with CRM and project tracking software",
+  ],
+  location: "vishakhapatnam / Hyderabad",
+  type: "Full-time",
+  salary: "Not disclosed",
+  experience: "2–5 years",
+  skills: [
+    "Project Coordination",
+    "MOU Management",
+    "Stakeholder Communication",
+    "Administration",
+    "Budget Tracking",
+    "Resource Planning",
+  ],
+  postedDate: "2025-07-01",
+  benefits: [
+    "Professional development opportunities",
+    "Medical insurance",
+    "Occasional travel allowances",
+  ],
+}
+
 ];
 
 export default JOBS;
