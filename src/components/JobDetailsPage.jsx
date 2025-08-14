@@ -380,7 +380,7 @@ export default function JobDetailsPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Relocate to Vizag */}
                 <div>
-                  <label htmlFor="relocate" className="block font-medium mb-1 text-xs sm:text-sm">Willing to Relocate to Vizag? *</label>
+                  <label htmlFor="relocate" className="block font-medium mb-1 text-xs sm:text-sm">Willing to Relocate *</label>
                   <select
                       id="relocate"
                   name="relocate"
