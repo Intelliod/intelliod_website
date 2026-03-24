@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { footerLinks } from "../constants";
-import logo from "../assets/erasebg-transformed.png";
+import logo from "../assets/update_logo.png";
 
 const Footer = () => {
   return (
@@ -11,8 +11,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col items-center  text-center space-y-8 md:flex-row md:justify-between md:text-left">
         <div className="flex flex-col items-center md:items-start space-y-4">
           <a href="#" className="flex items-center space-x-1">
-            <img src={logo} alt="Logo" width={80} height={30} className="py-2" />
-            <h1 className="text-3xl sm:text-5xl font-semibold">INTELLIOD</h1>
+            <img src={logo} alt="Logo" className="py-2 sm:h-20 h-15 w-auto" />
           </a>
           <p className="text-sm sm:text-base text-neutral-400 md:flex hidden ml-5 ">
             &copy; 2024 Intelliod. All rights reserved.
