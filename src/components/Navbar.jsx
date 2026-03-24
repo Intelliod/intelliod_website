@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex flex-shrink-0 py-3 rounded-xl ml-0 sm:ml-0 lg:ml-10 ">
             <a href="/" className="flex items-center" onClick={() => window.location.reload()}>
               {/* <img className="md:w-48 lg:w-16 py-1" src={logo} alt="Logo" /> */}
-              <img src={logo} alt="Logo" className="py-2 sm:h-20 h-15 w-auto" />
+              <img src={logo} alt="Logo" className="py-2 sm:h-[4.5rem] h-15 w-auto" />
             </a>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-lg items-center text-white">
