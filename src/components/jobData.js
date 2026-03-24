@@ -81,47 +81,56 @@ const JOBS = [
       "Paid time off and flexible PTO policy",
     ],
   },
+
   {
-    id: 3,
-    title: "Salesforce Integration Engineer",
-    description: "Salesforce Admin, Apex, Twilio integration required.",
-    fullDescription:
-      "You’ll be responsible for integrating all messaging channels (chat, WhatsApp, email, phone) into Salesforce, configuring workflows, automating ticketing, and ensuring secure integrations with third-party platforms using Salesforce APIs.",
-    responsibilities: [
-      "Integrate all messaging channels (chat, WhatsApp, email, phone) into Salesforce",
-      "Configure Salesforce workflows, ticketing automation, and escalation rules",
-      "Map user tiers to service-level agreement (SLA) timers and routing logic",
-      "Build real-time dashboards and schedule reports for operational performance",
-      "Ensure secure integration with third-party platforms using Salesforce APIs",
-      "Collaborate with frontend/backend teams to align data flow and business rules",
-    ],
-    qualificationRequired: "Graduation",
-    basicQualifications: [
-      "Minimum 2 years of Salesforce administration and configuration experience",
-      "Experience with Salesforce Workflows, Process Builder, Web-to-Case setup",
-      "Basic understanding of Apex and REST API usage",
-      "Experience integrating Twilio with Salesforce",
-      "Salesforce Certified Administrator (essential)",
-    ],
-    preferredQualifications: [
-      "Salesforce Platform App Builder Certification",
-      "Twilio Integration Certification (optional)",
-    ],
-    location: "Vizag / Hyderabad",
-    type: "Contract / Full-time",
-    salary: "Not disclosed",
-    experience: "2+ years",
-    contractDuration: "3–6 months",
-    skills: ["Salesforce", "Workflows", "Apex", "REST API", "Twilio", "Process Builder"],
-    postedDate: "2025-07-01",
-    benefits: [
-      "Creative freedom and ownership of design decisions",
-      "Flexible work schedule",
-      "Access to premium design tools and libraries",
-      "Mentorship from senior engineers",
-      "Quarterly project reviews",
-    ],
-  },
+  "id": 3,
+  "title": "SQL Developer | Immediate Joining ",
+  "description": "Design, develop, and maintain SQL databases, queries, and procedures.",
+  "fullDescription": "Join Intelliod as an SQL Developer to contribute to data-driven projects with real business impact. You will work closely with database architects and developers to design, optimize, and maintain SQL databases, ensuring high performance and scalability. This role involves writing complex queries, stored procedures, and functions, supporting ETL processes, and delivering insights through reporting tools.",
+  "responsibilities": [
+    "Develop and maintain SQL queries, stored procedures, and functions",
+    "Design and optimize database structures for performance and scalability",
+    "Support ETL processes and data integration tasks",
+    "Collaborate with team members to implement database solutions",
+    "Perform query optimization and database performance tuning",
+    "Assist in database design, data modeling, and normalization",
+    "Generate reports and support data analysis requirements",
+    "Troubleshoot database issues and provide technical support"
+  ],
+  "qualificationRequired": "Bachelor’s in Computer Science, Information Technology, or related field",
+  "basicQualifications": [
+    "2+ years of hands-on SQL development experience",
+    "Strong expertise in writing complex queries, stored procedures, and functions",
+    "Experience with database management systems (MySQL, PostgreSQL, SQL Server, etc.)",
+    "Knowledge of database design, data modeling, and normalization",
+    "Experience with query optimization and performance tuning",
+    "Understanding of ETL processes and data integration",
+    "Familiarity with reporting tools and data analysis"
+  ],
+  "preferredQualifications": [
+    "Experience with cloud database platforms or modern data technologies",
+    "Exposure to large-scale database systems and data engineering"
+  ],
+  "location": "Vizag",
+  "type": "Full-time",
+  "salary": "Not disclosed",
+  "experience": "2+ years",
+  "skills": [
+    "SQL Development",
+    "Database Design",
+    "Query Optimization",
+    "ETL Processes",
+    "Data Integration",
+    "Reporting & Analysis"
+  ],
+  "postedDate": "2025-08-14",
+  "benefits": [
+    "Professional growth opportunities in database administration and data engineering",
+    "Collaboration with experienced database architects",
+    "Exposure to modern data technologies and cloud platforms",
+    "Hands-on experience with large-scale database systems"
+  ]
+},
   {
     id: 4,
     title: "UX Designer",
@@ -417,7 +426,48 @@ const JOBS = [
     "Medical insurance",
     "Occasional travel allowances",
   ],
-}
+},
+  {
+    id: 12,
+    title: "Salesforce Integration Engineer",
+    description: "Salesforce Admin, Apex, Twilio integration required.",
+    fullDescription:
+      "You’ll be responsible for integrating all messaging channels (chat, WhatsApp, email, phone) into Salesforce, configuring workflows, automating ticketing, and ensuring secure integrations with third-party platforms using Salesforce APIs.",
+    responsibilities: [
+      "Integrate all messaging channels (chat, WhatsApp, email, phone) into Salesforce",
+      "Configure Salesforce workflows, ticketing automation, and escalation rules",
+      "Map user tiers to service-level agreement (SLA) timers and routing logic",
+      "Build real-time dashboards and schedule reports for operational performance",
+      "Ensure secure integration with third-party platforms using Salesforce APIs",
+      "Collaborate with frontend/backend teams to align data flow and business rules",
+    ],
+    qualificationRequired: "Graduation",
+    basicQualifications: [
+      "Minimum 2 years of Salesforce administration and configuration experience",
+      "Experience with Salesforce Workflows, Process Builder, Web-to-Case setup",
+      "Basic understanding of Apex and REST API usage",
+      "Experience integrating Twilio with Salesforce",
+      "Salesforce Certified Administrator (essential)",
+    ],
+    preferredQualifications: [
+      "Salesforce Platform App Builder Certification",
+      "Twilio Integration Certification (optional)",
+    ],
+    location: "Vizag / Hyderabad",
+    type: "Contract / Full-time",
+    salary: "Not disclosed",
+    experience: "2+ years",
+    contractDuration: "3–6 months",
+    skills: ["Salesforce", "Workflows", "Apex", "REST API", "Twilio", "Process Builder"],
+    postedDate: "2025-07-01",
+    benefits: [
+      "Creative freedom and ownership of design decisions",
+      "Flexible work schedule",
+      "Access to premium design tools and libraries",
+      "Mentorship from senior engineers",
+      "Quarterly project reviews",
+    ],
+  },
 
 ];
 
